@@ -37,10 +37,6 @@
             text-align: left;
             margin: 20px 0;
         }
-        p {
-            font-size: 1.1em;
-            line-height: 1.5;
-        }
         .button {
             display: inline-block;
             padding: 10px 20px;
@@ -59,6 +55,25 @@
             height: auto;
             border-radius: 5px;
             margin-top: 10px;
+            display: block;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            padding: 8px;
+            border: 1px solid #fff;
+            text-align: left;
+        }
+        th {
+            background-color: #ff4500;
+        }
+        .description {
+            font-size: 1.1em;
+            line-height: 1.5;
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -69,25 +84,87 @@
         <!-- Current Sauces -->
         <h2>Current Sauces</h2>
         <div class="sauce">
-            <h3>Fiery Habanero Blast</h3>
-            <img src="https://drive.google.com/uc?export=download&id=[your-id-here]" alt="Habanero Sauce">
-            <p>Ingredients: Habaneros, vinegar, garlic, salt.<br>Instructions: Blend it all, simmer for 10 mins, enjoy the burn!</p>
-        </div>
-        <div class="sauce">
-            <h3>Smoky Chipotle Kick</h3>
-            <img src="https://drive.google.com/uc?export=download&id=[your-id-here]" alt="Chipotle Sauce">
-            <p>Ingredients: Chipotles, tomatoes, onion, lime.<br>Instructions: Roast, blend, serve with everything.</p>
+            <h3>Green Fire</h3>
+            <img src="https://drive.google.com/uc?export=download&id=1DPhZN-aUpat6EpzPY3e0ul8npHsZX6er" alt="Green Fire ingredients before cutting and fermenting">
+            <img src="https://drive.google.com/uc?export=download&id=16j1JPTMZKyt-D5Z0p-TCIAPfmxZNq9vB" alt="Green Fire post-fermentation before blending">
+            <img src="https://drive.google.com/uc?export=download&id=16oJcDiGVbfifKmfs491mjYlHJfjT-GTM" alt="Green Fire bottled - Dan with his first bottle">
+            <table>
+                <tr>
+                    <th>Ingredient</th>
+                    <th>Percentage</th>
+                </tr>
+                <tr>
+                    <td>Banana Pepper</td>
+                    <td>29.31%</td>
+                </tr>
+                <tr>
+                    <td>Jalapeño</td>
+                    <td>27.10%</td>
+                </tr>
+                <tr>
+                    <td>Onion</td>
+                    <td>21.11%</td>
+                </tr>
+                <tr>
+                    <td>Water</td>
+                    <td>6.44%</td>
+                </tr>
+                <tr>
+                    <td>Garlic</td>
+                    <td>5.73%</td>
+                </tr>
+                <tr>
+                    <td>Lime</td>
+                    <td>3.43%</td>
+                </tr>
+                <tr>
+                    <td>Habanero</td>
+                    <td>2.97%</td>
+                </tr>
+                <tr>
+                    <td>Salt</td>
+                    <td>1.79%</td>
+                </tr>
+                <tr>
+                    <td>Distilled Vinegar</td>
+                    <td>1.54%</td>
+                </tr>
+                <tr>
+                    <td>Cilantro</td>
+                    <td>0.58%</td>
+                </tr>
+            </table>
+            <div class="description">
+                <p>[A vibrant, fiery green sauce with a zesty kick—your description here!]</p>
+            </div>
         </div>
 
         <!-- Upcoming Sauces -->
         <h2>Upcoming Sauces</h2>
         <div class="sauce">
-            <h3>Jalapeño Lime Zinger</h3>
-            <p>Status: In the works—testing the zest levels!</p>
-        </div>
-        <div class="sauce">
-            <h3>Ghost Pepper Inferno</h3>
-            <p>Status: Coming soon—brace yourself!</p>
+            <h3>Coming Soon</h3>
+            <p>No images available yet—stay tuned!</p>
+            <table>
+                <tr>
+                    <th>Ingredient</th>
+                    <th>Percentage</th>
+                </tr>
+                <tr>
+                    <td>[TBD]</td>
+                    <td>[TBD]</td>
+                </tr>
+                <tr>
+                    <td>[TBD]</td>
+                    <td>[TBD]</td>
+                </tr>
+                <tr>
+                    <td>[TBD]</td>
+                    <td>[TBD]</td>
+                </tr>
+            </table>
+            <div class="description">
+                <p>[Something hot in the works—details soon!]</p>
+            </div>
         </div>
 
         <a href="/index.html" class="button">Back to Home</a>
