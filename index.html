@@ -31,6 +31,7 @@
             padding: 20px;
             border-radius: 15px;
             box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+            position: relative; /* For positioning the pepper image */
         }
         h1 {
             font-size: 2.8em;
@@ -67,6 +68,18 @@
             bottom: 0;
         }
 
+        /* Pepper Image Styling */
+        .sombrero-pepper {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 100px;
+            height: auto;
+            opacity: 0.8;
+            border-radius: 50%; /* Makes it circular for a festive look */
+            z-index: 1;
+        }
+
         /* Responsive Design */
         @media (max-width: 600px) {
             .container {
@@ -78,20 +91,26 @@
             .button {
                 padding: 10px 15px;
             }
+            .sombrero-pepper {
+                width: 80px; /* Smaller on mobile */
+                top: 15px;
+                right: 15px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Dan's Spicy Sauces 🔥</h1>
-        <p>Bringing the heat to your kitchen! Enjoy the bold, fermented flavors that i just randomly threw together for a test run.</p>
+        <p>Bringing the heat to your kitchen! Enjoy the bold, fermented flavors that I just randomly threw together for a test run.</p>
         <a href="/recipes.html" class="button">🌶️ Explore Recipes</a>
         <a href="https://docs.google.com/forms/d/e/1FAIpQLScs5dFsX0Vg1uEkltf7QinfPRntiCCK0MYyh8R8BuS6KxuxGw/viewform?usp=dialog" class="button">📜 Submit a Sauce</a>
+        <img src="https://images.unsplash.com/photo-1560970498-4ec0ac6e64f3?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Pepper in Sombrero" class="sombrero-pepper">
     </div>
 
     <!-- Footer Section -->
     <footer>
-        <p>🌊 Taste the Heat | Dan's Spicy Sauces &copy; 2025</p>
+        <p>🌊 Taste the Heat | Dan's Spicy Sauces © 2025</p>
     </footer>
 </body>
 </html>
