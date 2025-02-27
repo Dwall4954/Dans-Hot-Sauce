@@ -3,90 +3,194 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Green Fire - Dan's Spicy Sauces</title>
+    <title>Dan's Spicy Sauces - Recipes</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #222;
-            color: white;
             margin: 0;
-            padding: 0;
-            text-align: center;
+            font-family: Arial, sans-serif;
+            background-image: url('https://images.unsplash.com/photo-1621525434507-6e2a638219a7?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #fff;
+            text-shadow: 2px 2px 4px #000;
         }
         .container {
             max-width: 800px;
             margin: 50px auto;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.7);
             padding: 20px;
-            background-color: rgba(0, 0, 0, 0.8);
             border-radius: 10px;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #ff4500;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 1.8em;
+            color: #ff4500;
+            margin-top: 30px;
+        }
+        .sauce {
+            text-align: left;
+            margin: 20px 0;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #ff4500;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .button:hover {
+            background-color: #e03d00;
         }
         img {
             max-width: 100%;
+            height: auto;
             border-radius: 5px;
-            margin: 10px 0;
+            margin-top: 10px;
+            display: block;
         }
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 20px;
+            margin: 20px 0;
         }
         th, td {
-            padding: 10px;
-            border: 1px solid white;
+            padding: 8px;
+            border: 1px solid #fff;
             text-align: left;
         }
         th {
             background-color: #ff4500;
         }
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            margin: 20px;
-            background-color: #ff4500;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
+        .description {
+            font-size: 1.1em;
+            line-height: 1.5;
+            margin-top: 20px;
         }
-        .button:hover {
-            background-color: #e03d00;
-        }
-        .review {
-            margin-top: 30px;
+        .feedback {
+            margin-top: 40px;
             padding: 20px;
-            background-color: rgba(255, 69, 0, 0.2);
-            border-radius: 5px;
+            background-color: rgba(255, 69, 0, 0.8);
+            border-radius: 10px;
+        }
+        .feedback h3 {
+            margin-top: 0;
+        }
+        iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Green Fire</h1>
-        <img src="https://drive.google.com/uc?export=view&id=1DPhZN-aUpat6EpzPY3e0ul8npHsZX6er" alt="Green Fire ingredients">
-        <img src="https://drive.google.com/uc?export=view&id=16j1JPTMZKyt-D5Z0p-TCIAPfmxZNq9vB" alt="Green Fire fermentation">
-        <img src="https://drive.google.com/uc?export=view&id=16oJcDiGVbfifKmfs491mjYlHJfjT-GTM" alt="Green Fire bottled">
+        <h1>Dan's Sauce Recipes</h1>
 
-        <h2>Ingredients</h2>
-        <table>
-            <tr><th>Ingredient</th><th>Percentage</th></tr>
-            <tr><td>Banana Pepper</td><td>29.31%</td></tr>
-            <tr><td>Jalapeño</td><td>27.10%</td></tr>
-            <tr><td>Onion</td><td>21.11%</td></tr>
-            <tr><td>Water</td><td>6.44%</td></tr>
-            <tr><td>Garlic</td><td>5.73%</td></tr>
-            <tr><td>Lime</td><td>3.43%</td></tr>
-            <tr><td>Habanero</td><td>2.97%</td></tr>
-            <tr><td>Salt</td><td>1.79%</td></tr>
-            <tr><td>Distilled Vinegar</td><td>1.54%</td></tr>
-            <tr><td>Cilantro</td><td>0.58%</td></tr>
-        </table>
+        <!-- Current Sauces -->
+        <h2>Current Sauces</h2>
+        <div class="sauce">
+            <h3>Green Fire</h3>
+            <img src="https://drive.google.com/thumbnail?id=1DPhZN-aUpat6EpzPY3e0ul8npHsZX6er&sz=w1000" alt="Green Fire ingredients before cutting and fermenting">
+            <img src="https://drive.google.com/thumbnail?id=16j1JPTMZKyt-D5Z0p-TCIAPfmxZNq9vB&sz=w1000" alt="Green Fire post-fermentation before blending">
+            <img src="https://drive.google.com/thumbnail?id=16oJcDiGVbfifKmfs491mjYlHJfjT-GTM&sz=w1000" alt="Green Fire bottled - Dan with his first bottle">
 
-        <div class="review">
-            <h2>Tell me what you liked and didn't like</h2>
-            <p>Submit an anonymous review of Green Fire!</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc8wTte9uejfx3DQ8I2UFcGpKg4fHFKHL8smCkvoq2BtqENjA/viewform?usp=dialog" class="button" target="_blank">Leave a Review</a>
+            <table>
+                <tr>
+                    <th>Ingredient</th>
+                    <th>Percentage</th>
+                </tr>
+                <tr>
+                    <td>Banana Pepper</td>
+                    <td>29.31%</td>
+                </tr>
+                <tr>
+                    <td>Jalapeño</td>
+                    <td>27.10%</td>
+                </tr>
+                <tr>
+                    <td>Onion</td>
+                    <td>21.11%</td>
+                </tr>
+                <tr>
+                    <td>Water</td>
+                    <td>6.44%</td>
+                </tr>
+                <tr>
+                    <td>Garlic</td>
+                    <td>5.73%</td>
+                </tr>
+                <tr>
+                    <td>Lime</td>
+                    <td>3.43%</td>
+                </tr>
+                <tr>
+                    <td>Habanero</td>
+                    <td>2.97%</td>
+                </tr>
+                <tr>
+                    <td>Salt</td>
+                    <td>1.79%</td>
+                </tr>
+                <tr>
+                    <td>Distilled Vinegar</td>
+                    <td>1.54%</td>
+                </tr>
+                <tr>
+                    <td>Cilantro</td>
+                    <td>0.58%</td>
+                </tr>
+            </table>
+            <div class="description">
+                <p>[A vibrant, fiery green sauce with a zesty kick—your description here!]</p>
+            </div>
+
+            <!-- Feedback Section -->
+            <div class="feedback">
+                <h3>Tell me what you liked and didn't like</h3>
+                <p>Your feedback helps me improve! Share your thoughts anonymously below.</p>
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc8wTte9uejfx3DQ8I2UFcGpKg4fHFKHL8smCkvoq2BtqENjA/viewform?embedded=true"></iframe>
+            </div>
         </div>
 
-        <a href="sauce-list.html" class="button">Back to Sauce List</a>
+        <!-- Upcoming Sauces -->
+        <h2>Upcoming Sauces</h2>
+        <div class="sauce">
+            <h3>Coming Soon</h3>
+            <p>No images available yet—stay tuned!</p>
+            <table>
+                <tr>
+                    <th>Ingredient</th>
+                    <th>Percentage</th>
+                </tr>
+                <tr>
+                    <td>[TBD]</td>
+                    <td>[TBD]</td>
+                </tr>
+                <tr>
+                    <td>[TBD]</td>
+                    <td>[TBD]</td>
+                </tr>
+                <tr>
+                    <td>[TBD]</td>
+                    <td>[TBD]</td>
+                </tr>
+            </table>
+            <div class="description">
+                <p>[Something hot in the works—details soon!]</p>
+            </div>
+        </div>
+
+        <a href="/index.html" class="button">Back to Home</a>
     </div>
 </body>
 </html>
