@@ -3,39 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dan's Spicy Sauces</title>
+    <title>Dan's Spicy Sauces - Taste of Aruba</title>
+
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="Dan's Spicy Sauces - Bringing the heat of the Caribbean to your kitchen. Explore bold hot sauce recipes inspired by Aruba!">
+    <meta property="og:title" content="Dan's Spicy Sauces - Taste of Aruba">
+    <meta property="og:description" content="Bringing the heat of the Caribbean to your kitchen with bold, tropical flavors.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1504394448285-7adeab975d7d?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Z3JlZW4lMjBjaGlsbGl8ZW58MHx8MHx8fDA%3D">
+
     <style>
         body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #222;
-            color: white;
             margin: 0;
-            padding: 0;
+            font-family: Arial, sans-serif; /* Clean, professional font */
+            background-image: url('https://images.unsplash.com/photo-1504394448285-7adeab975d7d?fm=jpg&q=60&w=3000');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            scroll-behavior: smooth;
         }
         .container {
-            margin-top: 50px;
+            max-width: 800px;
+            margin: 50px auto;
+            text-align: center;
+            background-color: rgba(0, 128, 128, 0.85); /* Tropical teal overlay */
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+            position: relative; /* For positioning the pepper image */
+        }
+        h1 {
+            font-size: 2.8em;
+            color: #FFD700; /* Aruba sun yellow */
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
         }
         .button {
             display: inline-block;
-            padding: 15px 30px;
-            background-color: #ff4500;
+            padding: 12px 20px;
+            margin: 10px;
+            background-color: #FF6347; /* Sunset orange */
             color: white;
             text-decoration: none;
-            font-size: 18px;
-            border-radius: 5px;
-            margin-top: 20px;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: 0.3s;
         }
         .button:hover {
-            background-color: #e03d00;
+            background-color: #FF4500; /* Darker orange on hover */
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 128, 128, 0.85);
+            color: white;
+            font-size: 1.1em;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Pepper Image Styling */
+        .sombrero-pepper {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 100px;
+            height: auto;
+            opacity: 0.8;
+            border-radius: 50%; /* Makes it circular for a festive look */
+            z-index: 1;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 2.4em;
+            }
+            .button {
+                padding: 10px 15px;
+            }
+            .sombrero-pepper {
+                width: 80px; /* Smaller on mobile */
+                top: 15px;
+                right: 15px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to Dan's Spicy Sauces</h1>
-        <p>Explore my homemade hot sauces!</p>
-        <a href="sauce-list.html" class="button">Explore Sauces</a>
+        <h1>Dan's Spicy Sauces 🔥</h1>
+        <p>Bringing the heat to your kitchen! Enjoy the bold, fermented flavors that I just randomly threw together for a test run.</p>
+        <a href="/recipes.html" class="button">🌶️ Explore Recipes</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScs5dFsX0Vg1uEkltf7QinfPRntiCCK0MYyh8R8BuS6KxuxGw/viewform?usp=dialog" class="button">📜 Submit a Sauce</a>
+        <img src="https://images.unsplash.com/photo-1560970498-4ec0ac6e64f3?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Pepper in Sombrero" class="sombrero-pepper">
     </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>🌊 Taste the Heat | Dan's Spicy Sauces © 2025</p>
+    </footer>
 </body>
 </html>
