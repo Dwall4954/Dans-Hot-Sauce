@@ -3,41 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dan's Sauce List</title>
+    <title>Dan's Spicy Sauces - Sauce List</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #222;
-            color: white;
             margin: 0;
-            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://images.unsplash.com/photo-1504394448285-7adeab975d7d?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Z3JlZW4lMjBjaGlsbGl8ZW58MHx8MHx8fDA%3D');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #fff;
+            text-shadow: 2px 2px 4px #000;
         }
         .container {
-            margin-top: 50px;
+            max-width: 800px;
+            margin: 50px auto;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #ff4500;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 1.8em;
+            color: #ff4500;
+            margin-top: 30px;
+        }
+        .sauce {
+            text-align: left;
+            margin: 20px 0;
         }
         .button {
-            display: block;
-            width: 200px;
-            margin: 10px auto;
-            padding: 15px;
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
             background-color: #ff4500;
             color: white;
             text-decoration: none;
-            font-size: 18px;
             border-radius: 5px;
+            font-weight: bold;
         }
         .button:hover {
             background-color: #e03d00;
+        }
+        .sauce-list-item {
+            margin: 15px 0;
+            padding: 10px;
+            background-color: rgba(255, 69, 0, 0.3);
+            border-radius: 5px;
+        }
+        a.sauce-link {
+            color: #ffcc00;
+            text-decoration: underline;
+            font-size: 1.1em;
+        }
+        a.sauce-link:hover {
+            color: #ffd700;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 2.2em;
+            }
+            h2 {
+                font-size: 1.6em;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Available Sauces</h1>
-        <a href="green-goo.html" class="button">Green Goo</a>
-        <a href="#" class="button">Upcoming Sauces</a> <!-- Add more sauces here -->
-        <a href="index.html" class="button">Back to Home</a>
+        <h1>Dan's Spicy Sauces - All Sauces</h1>
+
+        <!-- Current Sauces -->
+        <h2>Current Sauces</h2>
+        <div class="sauce">
+            <div class="sauce-list-item">
+                <a href="/recipes.html" class="sauce-link">Green Goo</a>
+                <p>A vibrant, fiery green sauce with a zesty kick—check out the full recipe!</p>
+            </div>
+        </div>
+
+        <!-- Upcoming Sauces -->
+        <h2>Upcoming Sauces</h2>
+        <div class="sauce">
+            <div class="sauce-list-item">
+                <p>Coming Soon—More fiery creations in the works!</p>
+            </div>
+        </div>
+
+        <a href="/index.html" class="button">Back to Home</a>
     </div>
 </body>
 </html>
