@@ -24,45 +24,56 @@
             border-radius: 10px;
         }
         h1 {
-            font-size: 2.5em;
+            font-size: 2.3em;
             color: #ff4500;
             margin-bottom: 20px;
         }
         h2 {
-            font-size: 1.8em;
+            font-size: 1.6em;
             color: #ff4500;
             margin-top: 30px;
         }
-        .sauce {
-            text-align: left;
-            margin: 20px 0;
+        .sauce-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px; /* Even spacing between buttons */
+            margin-top: 20px;
+        }
+        .sauce-button {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+        }
+        .sauce-list-item {
+            width: 250px; /* Fixed width */
+            height: 50px; /* Fixed height */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(255, 69, 0, 0.8);
+            border-radius: 12px;
+            transition: background 0.3s ease, transform 0.1s ease;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+        .sauce-button:hover .sauce-list-item {
+            background-color: rgba(255, 69, 0, 1);
+            transform: scale(1.05);
         }
         .button {
             display: inline-block;
-            padding: 10px 20px;
-            margin: 10px;
+            padding: 8px 16px;
+            margin: 20px auto;
             background-color: #ff4500;
             color: white;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 8px;
             font-weight: bold;
+            font-size: 0.9em;
         }
         .button:hover {
             background-color: #e03d00;
-        }
-        .sauce-list-item {
-            margin: 15px 0;
-            padding: 10px;
-            background-color: rgba(255, 69, 0, 0.3);
-            border-radius: 5px;
-        }
-        a.sauce-link {
-            color: #ffcc00;
-            text-decoration: underline;
-            font-size: 1.1em;
-        }
-        a.sauce-link:hover {
-            color: #ffd700;
         }
 
         /* Responsive Design */
@@ -71,10 +82,13 @@
                 padding: 15px;
             }
             h1 {
-                font-size: 2.2em;
+                font-size: 2em;
             }
             h2 {
-                font-size: 1.6em;
+                font-size: 1.4em;
+            }
+            .sauce-list-item {
+                width: 100%; /* Full width on smaller screens */
             }
         }
     </style>
@@ -83,21 +97,13 @@
     <div class="container">
         <h1>Dan's Spicy Sauces - All Sauces</h1>
 
-        <!-- Current Sauces -->
         <h2>Current Sauces</h2>
-        <div class="sauce">
-            <div class="sauce-list-item">
-                <a href="green-goo.html" class="sauce-link">Green Goo</a>
-                <p>A vibrant, fiery green sauce with a zesty kick—check out the full recipe!</p>
-            </div>
-        </div>
+        <div class="sauce-container">
+            <a href="green-goo.html" class="sauce-button">
+                <div class="sauce-list-item">Green Goo</div>
+            </a>
 
-        <!-- Upcoming Sauces -->
-        <h2>Upcoming Sauces</h2>
-        <div class="sauce">
-            <div class="sauce-list-item">
-                <p>Coming Soon—More fiery creations in the works!</p>
-            </div>
+            <div class="sauce-list-item">Coming Soon</div>
         </div>
 
         <a href="/index.html" class="button">Back to Home</a>
