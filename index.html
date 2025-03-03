@@ -14,69 +14,81 @@
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif; /* Clean, professional font */
+            font-family: Arial, sans-serif;
             background-image: url('https://images.unsplash.com/photo-1504394448285-7adeab975d7d?fm=jpg&q=60&w=3000');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
             color: #fff;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            line-height: 1.6; /* Matches Green Goo */
             scroll-behavior: smooth;
         }
         .container {
-            max-width: 800px;
-            margin: 50px auto;
+            max-width: 900px; /* Matches Green Goo */
+            margin: 60px auto; /* Matches Green Goo */
             text-align: center;
-            background-color: rgba(0, 128, 128, 0.85); /* Tropical teal overlay */
-            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.75); /* Matches Green Goo’s darker overlay */
+            padding: 30px; /* Matches Green Goo */
             border-radius: 15px;
-            box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Matches Green Goo */
         }
         h1 {
             font-size: 2.8em;
-            color: #FFD700; /* Aruba sun yellow */
-            margin-bottom: 10px;
+            color: #ff4500; /* Matches Green Goo’s orange */
+            margin-bottom: 25px; /* Matches Green Goo */
+            letter-spacing: 1px; /* Matches Green Goo */
         }
         p {
             font-size: 1.2em;
             line-height: 1.6;
+            padding: 0 20px; /* Matches Green Goo’s description */
         }
         .button {
             display: inline-block;
-            padding: 12px 20px;
-            margin: 10px;
-            background-color: #FF6347; /* Sunset orange */
+            padding: 12px 25px; /* Matches Green Goo */
+            margin: 15px; /* Slightly more spacing */
+            background-color: #ff4500; /* Matches Green Goo */
             color: white;
             text-decoration: none;
-            border-radius: 25px;
+            border-radius: 5px; /* Matches Green Goo */
             font-weight: bold;
-            transition: 0.3s;
+            transition: background-color 0.3s ease, transform 0.2s ease; /* Matches Green Goo */
         }
         .button:hover {
-            background-color: #FF4500; /* Darker orange on hover */
+            background-color: #e03d00; /* Matches Green Goo */
             transform: scale(1.05);
         }
         footer {
             text-align: center;
             padding: 20px;
-            background-color: rgba(0, 128, 128, 0.85);
+            background-color: rgba(0, 0, 0, 0.75); /* Matches container for consistency */
             color: white;
             font-size: 1.1em;
             position: fixed;
             width: 100%;
             bottom: 0;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2); /* Subtle lift */
         }
 
         /* Responsive Design */
         @media (max-width: 600px) {
             .container {
-                padding: 15px;
+                padding: 20px; /* Slightly less padding */
+                margin: 40px auto; /* Reduced margin */
             }
             h1 {
-                font-size: 2.4em;
+                font-size: 2.2em; /* Slightly smaller */
+            }
+            p {
+                font-size: 1.1em;
             }
             .button {
-                padding: 10px 15px;
+                padding: 10px 20px;
+                margin: 10px;
+            }
+            footer {
+                font-size: 1em;
             }
         }
     </style>
