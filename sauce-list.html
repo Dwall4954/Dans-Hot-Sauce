@@ -34,35 +34,37 @@
         .sauce-container {
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: center; /* Centers sauce buttons horizontally */
             gap: 15px;
             margin-top: 20px;
         }
         .sauce-button {
             text-decoration: none;
             color: white;
+            display: block; /* Changed to block for full-width centering */
+            width: 300px; /* Fixed width for equal sizing */
+            margin-left: auto; /* Centers the button within its parent */
+            margin-right: auto; /* Centers the button within its parent */
         }
         .sauce-list-item {
-            width: 250px;
-            height: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: rgba(255, 69, 0, 0.8);
-            border-radius: 5px;
-            transition: background-color 0.3s ease, transform 0.2s ease;
-            font-size: 1.1em;
-            font-weight: bold;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            padding: 12px 25px; /* Matches index */
+            margin: 15px 0; /* Adjusted to vertical margin only */
+            background-color: #ff4500; /* Matches index */
+            border-radius: 5px; /* Matches index */
+            font-weight: bold; /* Matches index */
+            transition: background-color 0.3s ease, transform 0.2s ease; /* Matches index */
+            font-size: 1.1em; /* Kept from original for readability */
+            width: 100%; /* Fills the parent .sauce-button */
+            box-sizing: border-box; /* Ensures padding doesn’t increase width */
         }
         .sauce-button:hover .sauce-list-item {
-            background-color: #ff4500;
-            transform: scale(1.05);
+            background-color: #e03d00; /* Matches index hover */
+            transform: scale(1.05); /* Matches index hover */
         }
         .button {
-            display: inline-block;
+            display: block; /* Changed to block for centering */
             padding: 12px 25px;
-            margin: 15px auto;
+            margin: 15px auto; /* Centers horizontally with auto margins */
             background-color: #ff4500;
             color: white;
             text-decoration: none;
@@ -70,6 +72,8 @@
             font-weight: bold;
             font-size: 1em;
             transition: background-color 0.3s ease, transform 0.2s ease;
+            width: 300px; /* Matches sauce-button width */
+            box-sizing: border-box; /* Consistent with sauce-list-item */
         }
         .button:hover {
             background-color: #e03d00;
@@ -85,14 +89,20 @@
             h1 {
                 font-size: 2.2em;
             }
+            .sauce-button {
+                width: 100%; /* Full width on mobile */
+                max-width: 300px; /* Keeps a reasonable max width */
+            }
             .sauce-list-item {
-                width: 100%;
-                height: 50px;
-                font-size: 1em; /* Slightly smaller for longer text */
+                padding: 10px 20px; /* Matches index mobile */
+                margin: 10px 0; /* Matches index mobile, vertical only */
+                font-size: 1em; /* Kept from original for readability */
             }
             .button {
                 padding: 10px 20px;
-                margin: 10px auto;
+                margin: 10px auto; /* Keeps centered */
+                width: 100%; /* Matches sauce-button on mobile */
+                max-width: 300px; /* Consistent with sauce-button */
             }
         }
     </style>
